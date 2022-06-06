@@ -5,8 +5,8 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   const [loaded] = useFonts({
    'Antonio':require("./assets/fonts/Antonio-Regular.ttf"),
-  "Spartan-bold":require("./assets/fonts/Spartan-Bold.ttf")''
-  "Spartan-regular":require("./assets/fonts/Spartan-Regular.ttf")
+  "spartan-bold":require("./assets/fonts/Spartan-Bold.ttf")''
+  "spartan-regular":require("./assets/fonts/Spartan-Regular.ttf")
   });
 
 if(!loaded){
