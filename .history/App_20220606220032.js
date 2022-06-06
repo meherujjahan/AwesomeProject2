@@ -2,7 +2,6 @@ import { useFonts } from 'expo-font';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View } from 'react-native';
 import Text from './src/components/text/text';
-import { colors } from './src/theme/color';
 
 
 
@@ -34,7 +33,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     color:'white',
-    backgroundColor: colors.black,
+    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
   },

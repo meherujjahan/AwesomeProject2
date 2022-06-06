@@ -2,15 +2,14 @@ import { useFonts } from 'expo-font';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View } from 'react-native';
 import Text from './src/components/text/text';
-import { colors } from './src/theme/color';
 
 
 
 export default function App() {
   const [loaded] = useFonts({
    'Antonio':require("./assets/fonts/Antonio-Regular.ttf"),
-  "Spartan-bold":require("./assets/fonts/Spartan-Bold.ttf"),
-  "Spartan-regular":require("./assets/fonts/Spartan-Regular.ttf"),
+  "Spartan-bold":require("./assets/fonts/Spartan-Bold.ttf")''
+  "Spartan-regular":require("./assets/fonts/Spartan-Regular.ttf")
   });
 
 if(!loaded){
@@ -23,7 +22,7 @@ if(!loaded){
         hello world</Text>
 
 
-      <Text preset='h1'>
+      <Text style={{color:'black', fontFamily:"spartan",}}>
         here i use font family...is it working?????</Text>
       <StatusBar style="auto" />
     </View>
@@ -34,7 +33,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     color:'white',
-    backgroundColor: colors.black,
+    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
   },
