@@ -14,11 +14,11 @@ if(!loaded){
 
   return (
     <View style={styles.container}>
-      <Text style={{fontFamily:"Antonio"}}>
+      <Text style={{fontFamily:"Antonio", fontWeight:'bold'}}>
         hello world</Text>
 
 
-      <Text style={{color:'black', fontFamily:"spartan",}}>
+      <Text style={{color:'black', fontFamily"spartan" fontWeight:'bold'}}>
         here i use font family...is it working?????</Text>
       <StatusBar style="auto" />
     </View>

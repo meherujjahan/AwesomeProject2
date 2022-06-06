@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
   const [loaded] = useFonts({
-   'Antonio':require("./assets/fonts/Antonio.ttf"),
+   'antonio':require("./assets/fonts/Antonio.ttf"),
   "spartan":require("./assets/fonts/spartan.ttf")
   });
 
@@ -14,11 +14,11 @@ if(!loaded){
 
   return (
     <View style={styles.container}>
-      <Text style={{fontFamily:"Antonio"}}>
+      <Text style={{fontFamily:"antonio", fontWeight:'bold'}}>
         hello world</Text>
 
 
-      <Text style={{color:'black', fontFamily:"spartan",}}>
+      <Text style={{color:'black', fontWeight:'bold'}}>
         here i use font family...is it working?????</Text>
       <StatusBar style="auto" />
     </View>

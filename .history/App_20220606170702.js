@@ -18,7 +18,7 @@ if(!loaded){
         hello world</Text>
 
 
-      <Text style={{color:'black', fontFamily:"spartan",}}>
+      <Text style={{color:'black', fontFamily:"spartan", fontWeight:"900"}}>
         here i use font family...is it working?????</Text>
       <StatusBar style="auto" />
     </View>
