@@ -8,8 +8,7 @@ import { PLANET_LIST } from '../data/planet-list';
 import { colors } from '../theme/color';
 import { spacing } from '../theme/spacing';
 
-const PlanetItem = ({item})=>{
-  const {name, color }= item;
+const PlanetItem = ({name , color})=>{
   const navigation = useNavigation();
   return(
     <Pressable onPress={()=>{
@@ -25,9 +24,9 @@ const PlanetItem = ({item})=>{
 }
 export default function Home({ navigation}) {
   const renderItem = ({item})=>{
-
+    const {name, color}= item;
     return(
-    <PlanetItem item ={item}/> 
+    <PlanetItem name={name} color ={color}/> 
     )
   }  
 
