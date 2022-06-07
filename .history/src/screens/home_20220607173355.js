@@ -8,7 +8,7 @@ import { colors } from '../theme/color';
 import { spacing } from '../theme/spacing';
 
 
-export default function Home({ navigation}) {
+export default function Home( navigation) {
   return (
     <SafeAreaView style={styles.container}>
      <PlanetHeader/>
