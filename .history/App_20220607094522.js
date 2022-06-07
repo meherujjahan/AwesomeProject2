@@ -1,10 +1,11 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { useFonts } from 'expo-font';
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet } from 'react-native';
+import { SafeAreaView } from 'react-native-web';
 import Text from './src/components/text/text';
 import Home from './src/screens/home';
+import { colors } from './src/theme/color';
 
 
 
@@ -23,14 +24,13 @@ if(!loaded){
 //navigation system
 const Stack = createNativeStackNavigator();
   return (
-   <>
+    <SafeAreaView>
        <NavigationContainer>
-      <Stack.Navigator  screenOptions={{headerShown: false}}>
+      <Stack.Navigator >
         <Stack.Screen name="Home" component={Home} />
       </Stack.Navigator>
     </NavigationContainer>
-    <StatusBar style='light'/>
-    </>
+    </SafeAreaView>
    
   );
 }
@@ -38,7 +38,10 @@ const Stack = createNativeStackNavigator();
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-   
+    color:'white',
+    backgroundColor: colors.black,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 
 });
