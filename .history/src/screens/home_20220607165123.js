@@ -26,7 +26,6 @@ export default function Home() {
            </View>
        )
      }}
-     ItemSeparatorComponent={()=> <View style={styles.separator}></View>}
      />
     </SafeAreaView>
   )
@@ -36,24 +35,20 @@ const styles = StyleSheet.create({
         flex:1, backgroundColor: colors.black, 
     },
     list:{
-      padding:spacing[4],
+      padding:spacing[5],
     },
     itemName:{
       textTransform:"uppercase",
-      marginLeft:spacing[3],
+      marginLeft:spacing[4],
     },
     circle:{
-      width:28,
-      height:28,
+      width:25,
+      height:25,
       borderRadius:15,
     },
     item:{
      flexDirection:"row",
      alignItems:"center",
-     padding:spacing[3],
-    },
-    separator:{
-      borderBottomColor:colors.white,
-      borderBottomWidth:0.2,
+     padding:spacing[4],
     }
 })

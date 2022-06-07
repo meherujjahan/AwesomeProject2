@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
     item:{
      flexDirection:"row",
      alignItems:"center",
-     padding:spacing[3],
+     padding:spacing[4],
     },
     separator:{
       borderBottomColor:colors.white,

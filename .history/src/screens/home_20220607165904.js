@@ -21,7 +21,7 @@ export default function Home() {
        return(
          <View style={styles.item}>
            <View style={[styles.circle, {backgroundColor:color}]}/>
-           <Text preset='h4' style={styles.itemName}>  {name}</Text>
+           <Text preset='h3' style={styles.itemName}>  {name}</Text>
          
            </View>
        )
@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
         flex:1, backgroundColor: colors.black, 
     },
     list:{
-      padding:spacing[4],
+      padding:spacing[5],
     },
     itemName:{
       textTransform:"uppercase",
@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
     item:{
      flexDirection:"row",
      alignItems:"center",
-     padding:spacing[3],
+     padding:spacing[4],
     },
     separator:{
       borderBottomColor:colors.white,

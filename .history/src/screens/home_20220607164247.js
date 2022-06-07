@@ -15,18 +15,15 @@ export default function Home() {
      contentContainerStyle={styles.list}
      keyExtractor={(item, index)=> item.name}
      data={PLANET_LIST}
-     
      renderItem={({item, index})=>{
-       const {name, color}= item;
        return(
          <View style={styles.item}>
-           <View style={[styles.circle, {backgroundColor:color}]}/>
-           <Text preset='h4' style={styles.itemName}>  {name}</Text>
+           <View style={[styles.circle, {backgroundColor:item.color}]}/>
+           <Text>  {item.name}</Text>
          
            </View>
        )
      }}
-     ItemSeparatorComponent={()=> <View style={styles.separator}></View>}
      />
     </SafeAreaView>
   )
@@ -34,26 +31,17 @@ export default function Home() {
 const styles = StyleSheet.create({
     container :{
         flex:1, backgroundColor: colors.black, 
-    },
+    }
     list:{
-      padding:spacing[4],
-    },
-    itemName:{
-      textTransform:"uppercase",
-      marginLeft:spacing[3],
+      padding:spacing[5],
     },
     circle:{
-      width:28,
-      height:28,
+      width:30,
+      height:30,
       borderRadius:15,
     },
     item:{
      flexDirection:"row",
-     alignItems:"center",
-     padding:spacing[3],
-    },
-    separator:{
-      borderBottomColor:colors.white,
-      borderBottomWidth:0.2,
+     alignItems:"center"
     }
 })
