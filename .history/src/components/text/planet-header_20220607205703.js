@@ -24,7 +24,7 @@ navigation.goBack();
 const styles = StyleSheet.create(
    {
     container: {
-      marginTop:spacing[3],
+      marginTop:spacing[3]
         padding:  spacing[5],
         borderBottomWidth:0.2, borderBottomColor:colors.white,
         flexDirection:"row",
