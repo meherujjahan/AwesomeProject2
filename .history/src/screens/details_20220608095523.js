@@ -38,13 +38,13 @@ const styles = StyleSheet.create({
     imageView:{
       padding:spacing[5],
       alignItems:'center',
-    
+      justifyContent:'center',
     },
     name:{
-      textTransform:"uppercase",
+
       alignItems:'center',
       marginTop:spacing[5],
-      marginHorizontal:spacing[10],
+      justifyContent:'center',
     },
     details:{
       lineHeight:21,

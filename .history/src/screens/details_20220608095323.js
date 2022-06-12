@@ -18,12 +18,12 @@ const {name, description}= planet;
     <SafeAreaView style={styles.container}>
     <PlanetHeader backBtn={true}/>
     <ScrollView>
-      {/* <View style={styles.imageView}></View> */}
-      <View>
+      {/* <View style={styles.imageView}></View>
+      <View> */}
       <Text preset='h1' style={styles.name}>
 {name}
       </Text>
-      <Text style={styles.details}>
+      <Text preset='h1' style={styles.details}>
 {description}
       </Text>
       </View>
@@ -38,19 +38,18 @@ const styles = StyleSheet.create({
     imageView:{
       padding:spacing[5],
       alignItems:'center',
-    
+      justifyContent:'center',
     },
     name:{
-      textTransform:"uppercase",
       alignItems:'center',
       marginTop:spacing[5],
-      marginHorizontal:spacing[10],
+      justifyContent:'center',
     },
     details:{
       lineHeight:21,
       marginTop:spacing[5],
       marginHorizontal:spacing[5],
-      alignItems:'center'
+      alignItems:'center'.
     }
   
 })

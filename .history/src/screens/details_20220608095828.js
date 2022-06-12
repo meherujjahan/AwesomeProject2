@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
       textTransform:"uppercase",
       alignItems:'center',
       marginTop:spacing[5],
-      marginHorizontal:spacing[10],
+      marginHorizontal:spacing[5],
     },
     details:{
       lineHeight:21,
